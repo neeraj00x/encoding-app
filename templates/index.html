@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Encoder/Decoder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>String Encoder/Decoder</h1>
+    </header>
+    <main>
+        <section class="container">
+			<textarea type="text" id="input_string" name="input_string" required></textarea>
+			<div class = "buttons">
+			<button type="button" id="encode">Encode</button>
+			<button type="button" id="decode">Decode</button>
+			</div>
+        </section>
+        <section class="result-container">
+            <div id="output" >This is where the result goes.</div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 String Encoder/Decoder</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+
